@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/estilos/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Resistencia Store</title>
-    <link rel="icon" href="/imagenes/Logos/logo_pagina.webp" type="image/x-icon">
+    <link rel="icon" href="/imagenes/Logos/image.jpg" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -61,13 +61,14 @@
     <main>
         <div class="botones_seleccion">
             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary">Ropa casual</button>
-                <button type="button" class="btn btn-outline-primary">Calzado</button>
-                <button type="button" class="btn btn-outline-primary">Ropa deportiva</button>
+                <button onclick="ver_todo()" type="button" class="btn btn-outline-primary">Ver todo catalogo</button>
+                <button onclick="ver_casual()" type="button" class="btn btn-outline-primary">Ropa casual</button>
+                <button onclick="ver_calzado()" type="button" class="btn btn-outline-primary">Calzado</button>
+                <button onclick="ver_deportivo()" type="button" class="btn btn-outline-primary">Ropa deportiva</button>
             </div>
         </div>
     </main>
-    <div class="productos">
+    <div id="catalogo" class="productos">
         <div class="card" style="width: 18rem;">
             <img src="/imagenes/Imagenes_ropa/BERMUDA-NEGRA-600x600.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -252,5 +253,6 @@
         </div>
     </div>
 </footer>
+<script src="/script/accions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
