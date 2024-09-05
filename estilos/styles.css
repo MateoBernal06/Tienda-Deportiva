@@ -96,7 +96,6 @@ html, body {
     grid-template-rows: auto;
     display: grid;
     justify-items: center;
-    background-color: antiquewhite;
 }
 
 .card{
