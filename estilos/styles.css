@@ -100,8 +100,8 @@ html, body {
 
 .card{
     margin-top: 20px;
-    width: 400px;
-    height: 500px;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .card-text{
@@ -197,3 +197,40 @@ ul{
     color: #4D4DFF;
 }
 
+@media (max-width: 768px) {
+    .inicio{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    .botones{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .frase{
+        width: 100%;
+        text-align: center;
+    }
+    .promociones{
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+    }
+    .promo{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .botones_seleccion{
+        text-align: center;
+        gap: 10px;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .card{
+        width: 250px;
+        height: 250px;
+    }
+}
